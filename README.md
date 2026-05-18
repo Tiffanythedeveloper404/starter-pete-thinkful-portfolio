@@ -1,45 +1,73 @@
-# Pete's Portfolio Starter Project
+Project Overview
 
-This repository contains a starter template for Pete's portfolio. The project helps you learn how to create a personal portfolio page using HTML and CSS, while also getting familiar with basic design principles.
+This project is a redesign and implementation of a personal portfolio webpage. The goal was to take an existing layout, analyze its structure, and rebuild it using modern, semantic HTML and clean, organized CSS. The redesign emphasizes readability, visual hierarchy, and consistent styling across all sections, including About, Portfolio, and Contact.
+The project also required matching a provided mockup as closely as possible. This included replicating the color palette, typography, spacing, and layout decisions. Flexbox was used to create a horizontal layout for the Portfolio section, and careful attention was given to alignment, spacing, and responsiveness. Throughout the process, I iterated on the design, debugged layout issues, and refined the structure to ensure the final result matched the mockup both visually and structurally.
 
-## Project Overview
+Original vs. Revised Layout
 
-This portfolio website template serves as a foundation to showcase your projects, skills, and experience as a developer. It includes pre-designed sections for an introduction, project gallery, skills, and contact information. You are encouraged to modify and extend the design to fit your personal style.
+Original Layout
+• 	Sections stacked vertically with minimal styling
+• 	No consistent spacing or typography
+• 	Portfolio items displayed in a vertical column
+• 	Contact section lacked structure and visual hierarchy
+• 	No clear alignment or spacing rules
 
-## Features
+Revised Layout
+• 	Clean, centered layout with consistent margins and padding
+• 	Serif headings paired with sans‑serif body text for contrast
+• 	Portfolio section redesigned using Flexbox to create a horizontal, evenly spaced layout
+• 	Contact section styled to match the mockup, including numbered list alignment and spacing
+• 	Improved color palette and borders for visual cohesion
+• 	Images styled with borders and consistent sizing
 
-- **Responsive Layout**: The template is designed to be mobile-friendly, ensuring that your portfolio looks great on all devices.
-- **Customizable Design**: Easily update images, colors, and content through the HTML and CSS files.
-- **Gallery Section**: Showcase your projects with space for project descriptions and links.
-- **Contact Form**: Pre-built form to collect inquiries and messages from visitors.
+Redesign Mock‑Up
 
-## Installation
+The mockup guided:
+• 	Section spacing
+• 	Typography choices
+• 	Background colors
+• 	Portfolio layout (three items horizontally)
+• 	Contact section formatting (centered intro + left‑aligned numbered list)
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Thinkful-Ed/starter-pete-thinkful-portfolio.git
-   cd starter-pete-thinkful-portfolio
-   ```
+Implementation Plan
+1. 	Rebuild HTML using semantic tags (, , , )
+2. 	Apply global typography and color styles
+3. 	Implement Flexbox for the Portfolio section
+4. 	Style images and text blocks to match the mockup
+5. 	Recreate the Contact section with proper list alignment
+6. 	Debug spacing, alignment, and CSS overrides
+7. 	Final pass to ensure visual consistency
 
-2. **Open the project**:
-   You can simply open `index.html` in your browser to view the website locally.
+Design Trade‑Offs
+• 	Kept images in their original aspect ratio instead of forcing portrait cropping to preserve authenticity
+• 	Balanced mockup accuracy with accessibility (e.g., readable font sizes, adequate contrast)
+• 	Chose Flexbox over CSS Grid for simplicity and assignment requirements
+• 	Avoided overly complex animations to maintain clarity and performance
 
-## Getting Started
+AI Tools Used & Justification
 
-Once you have the repository cloned, feel free to modify the HTML and CSS to add your personal details:
-- Update the **profile picture** and **about section** in `index.html`.
-- Add your own **project details** in the gallery section.
-- Customize colors and fonts in the `style.css` file to match your preferences.
+Windsurf and Microsoft Copilot was used during development for:
+• 	Debugging CSS layout issues (e.g., Flexbox not applying due to unsaved file)
+• 	Explaining why global CSS rules affected specific sections
+• 	Helping refine spacing and alignment to match the mockup
+• 	Generating this README in a structured, professional format
 
-## Customization
+Justification:
+Windsurf and Copilot accelerated troubleshooting, provided clear explanations of CSS behavior, and helped ensure the final layout matched the mockup accurately. All code decisions were reviewed and implemented manually.
 
-This template is meant to be a starting point. Here are some suggestions for customization:
-- Replace the placeholder images in the `images/` folder with your own.
-- Modify the layout, fonts, and colors in `style.css` to make it unique.
-- Add additional sections for skills, experience, or testimonials as needed.
+Key Decisions, Challenges & Learning Moments
 
-## Technologies
+Key Decisions
+• 	Using a wrapper div () as the Flexbox container
+• 	Keeping images uncropped to maintain original proportions
+• 	Using  to fix spacing in the Contact section
+• 	Applying section‑specific CSS to override global image rules
 
-- **HTML**: Structure of the web pages.
-- **CSS**: Styling and layout of the portfolio.
-- **Responsive Design**: Built with mobile-first principles in mind.
+Challenges
+• 	Flexbox layout not applying due to unsaved CSS file
+• 	Global  rule overriding Portfolio image styling
+• 	Numbered list spacing in the Contact section not matching the mockup
+• 	Ensuring consistent spacing across all sections
+
+Debugging & Troubleshooting Moments
+• 	Ident
